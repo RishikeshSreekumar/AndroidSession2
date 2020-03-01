@@ -34,12 +34,14 @@
             android:textSize="16sp" />
 
         <CheckBox
+            android:id="@+id/cap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cappuccino"
             android:textSize="16sp" />
 
         <CheckBox
+            android:id="@+id/esp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Espresso"
@@ -59,6 +61,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/btn_decrement"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
@@ -66,9 +69,11 @@
             android:gravity="center"
             android:text="-"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="decrement"/>
 
         <TextView
+            android:id="@+id/tv_count"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:gravity="center"
@@ -76,13 +81,15 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/btn_increment"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:gravity="center"
             android:text="+"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="increment"/>
 
     </LinearLayout>
 
@@ -98,6 +105,7 @@
             android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/et_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Comments"
@@ -106,11 +114,13 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/bt_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="64dp"
         android:text=" Order "
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="showComment"/>
 
 </LinearLayout>
